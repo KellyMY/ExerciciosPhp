@@ -32,7 +32,7 @@ public $length = 20;
   }*/
   
 
- /* public function textWrap(getText(), getLength()): array {
+  public function textWrap(getText(), getLength()): array {
   	//$this->text = $text;
 	$array = explode(" ",$text);
 	$numPalavra = count($array);
@@ -60,10 +60,5 @@ public $length = 20;
 }
     return [""];
   }
-*/
-
-
-  public function teste(){
-  	echo "Imprimindo texto......";
-  }
+  
 }
