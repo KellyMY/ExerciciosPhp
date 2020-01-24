@@ -9,8 +9,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Galoa\\ExerciciosPhp\\": "src",
-            "Galoa\\ExerciciosPhp\\Tests\\": "tests"
+            //"App\\": [
+                "Galoa/ExerciciosPhp/TextWrap/"
+            //]
+           // "Galoa\\ExerciciosPhp\\": "src",
+            //"Galoa\\ExerciciosPhp\\Tests\\": "tests"
         }
     }
 }

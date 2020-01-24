@@ -2,22 +2,43 @@
 
 namespace Galoa\ExerciciosPhp\TextWrap;
 
+require_once 'vendor/autoload.php';
 /**
  * Implemente sua resolução aqui.
  */
 
 class Resolucao implements TextWrapInterface {
-$text = "Hoje é o dia de fazer festa! De comemorar e prestigiar o NATAL e ANO NOVO. Começar um novo ciclo uma nova maneira de enchegar o mundo e mudar as perspectiva de mundo que tem no momento.";
-
-$array = explode(" ",$text);
-$numPalavra = count($array);
-$length = 20;
-$linUsado = 0;
+public $text = "Hoje é o dia de fazer festa! De comemorar e prestigiar o NATAL e ANO NOVO. Começar um novo ciclo uma nova maneira de enchegar o mundo e mudar as perspectiva de mundo que tem no momento.";
+public $length = 20;
+	
+	public function setText(){
+		$this->text = $text;
+	}
+	public function getText(){
+		return $this->text;
+	}
+	public function getLength(){
+		return $this->length;
+	}
   /**
    * {@inheritdoc}
    */
-  public function textWrap(string $text, int $length): array {
-  	
+
+  /*public function setText($text){
+  	$this->text = $text;
+  }
+  public function getText(){
+  	return $this->text;
+  }*/
+  
+
+ /* public function textWrap(getText(), getLength()): array {
+  	//$this->text = $text;
+	$array = explode(" ",$text);
+	$numPalavra = count($array);
+	//$length = 20;
+	$linUsado = 0;
+
   	for($i = 0; $i < $numPalavra; $i++){
 	$contaPalavra = strlen($array[$i]);
 	$linUsado += $contaPalavra; //Quatidade de linhas usadas
@@ -39,5 +60,10 @@ $linUsado = 0;
 }
     return [""];
   }
+*/
 
+
+  public function teste(){
+  	echo "Imprimindo texto......";
+  }
 }

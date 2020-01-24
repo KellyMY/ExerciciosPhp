@@ -35,5 +35,5 @@ interface TextWrapInterface {
    *   respeitando o comprimento de linha e as regras especificadas acima.
    */
   public function textWrap(string $text, int $length): array;
-
+  public function teste();
 }
